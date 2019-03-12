@@ -2,10 +2,10 @@ const readlineSync = require("readline-sync");
 let num = 0;
 
  while (num !== 42) {
-     num = parseInt (readlineSync.question ('which is your favorite number?'));
+     num = parseInt (readlineSync.question ('which is you favorite number?'));
 
     if (num === 42) {
-        console.log ("That's the correct number")
+        console.log (" YES! That's the correct number")
         
     
    //if   
@@ -13,7 +13,7 @@ let num = 0;
   
     // else
         
-    readlineSync.question("Are you sure?");
+    readlineSync.question("Are you sure? Try again!");
         
     }
 }

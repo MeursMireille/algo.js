@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+    function sayHello(who) {
+        document.write("Hello, " + who);
+    }
+    </script>
+</head>
+<body>
+    <script>
+    document.write("hello world  ");
+
+    var myvariable = ("string");
+    var myvariable = 5;
+    var myvariable = true;
+// this is a comment which is very usefull for developers//
+    var words = "This is ";
+    var morewords = "a sentence ";
+    var sentence = words + morewords;
+    document.write (sentence  )
+
+    var num1 = 5;
+    var num2 = 3;
+    var total = num1++ //num1 + num2; 
+    // + - * / or you can remain the divin divi of num1++ , ++num2
+    document.write(total);
+
+    var alpha = "ABCDEFG";  // A is position 0
+    var length = alpha.length;
+    var result = alpha.substring(3,5);
+    document.write(result);
+
+    var a = new Array(7); //start @ 0 en eindigd bij 6
+    a[0] = "cat";
+    a[1] = "dog";
+    a[2] = "bird";
+    a[3] = 95;
+    //...
+    a[6] = "true";
+    document.write(a[1]); //geeft dog weer
+    document.write(a[3]); //geeft 95 weer
+    // een andere variant van Arrays is
+    var a = new Array("cat", "dog", 95, true);
+    document.write(a[1]);
+    // of nog korter is
+    var a = ["cat", "dog", 95, true];
+    document.write(a[3]);
+
+    //funtion is easy to reuse!!
+    //function sayHello() {
+    // document.write("Hello ");
+     // }// wordt in de head gezet !!
+    sayHello("Bob");
+    document.write("<br>");
+    sayHello("Mary");
+ 
+    //float controle 
+    var a = 12;
+    if (a > 10) { 
+         alert(a);
+    }
+    // if (a > 10) nothing will happen because a is smaller then 10, (kan ook met >=, <=, ==, !=
+    document.write(a);
+    
+    var a = "Jake";
+    if (a == "Jake") { 
+         alert(a);
+    } else {
+        alert("the condition was false");
+    }
+
+    //for loop
+    for (i=0;i<5;i++) {
+        document.write("this is iteration" + i + "<br>");
+    }  // deze loop start bij 0 en gaat tot 4 omdat ik 5 aangeef, het kijkt of alle condities goed zijn anders geeft het de tekst
+    // (i=0 de loop bekijkt eerst of deze veronderstelling klopt)
+    // (i<5 daarna bekijkt het of deze veronderstelling klopt)
+    // i++ als laatste wordt deze veronderstelling gechecked)
+
+
+   /* already reserved words in JS are
+   abstract       else           instanceof       switch    
+   boolean        enum           int              synchronized
+   break          export         interface        this
+   byte           extens         long             throws
+   case           false          native           throw
+   catch          final          new              transient
+   char           finally        null             true  
+   class          float          package          try
+   const          for            private          typeof
+   continue       function       protected        var
+   debugger       goto           public           void
+   default        if             return           volatile
+   delete         implements     short            while
+   do             import         static           with
+   double         in             super            
+
+</script>
+</body>
+<script src="1.1.js"></script>
+</html> 
