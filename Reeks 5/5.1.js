@@ -1,16 +1,61 @@
 const readlineSync = require("readline-sync");
 
-let askTvSerie = {
- 'name': readlineSync.question('What is your favorite TV serie ? '),
- 'year' : readlineSync.question('What is the production year ? '),
- 'members' : readlineSync.question('What are your favorite cast members ? '),
-};
 
-function askTvSerie(name,year,members) {
+let name, productionYear, castMembers;
+let tvSerie = { 
+    name:"",
+    productionYear:"",
+    castMembers:[] };
+
+
+
+function askTvSerie(){
+do {
+    name =  readlineSync.question('What is your favorite TV serie ? ');
+} while (typeof name === "undefined" || name === "");
+ 
+do {
+    productionYear = readlineSync.question('What is the production year ? ');
+} while (typeof productionYear === "undefined" || productionYear === "");
+
+do {
+    castMembers = readlineSync.question('What are your favorite cast members ? ');
+} while (typeof castMembers === "undefined" || castMembers === "");  
+
+tvSerie.name = name;
+ tvSerie.productionYear = productionYear;
+ tvSerie.castMembers = castMembers;
+};  
+    
+         askTvSerie(); 
+        console.log(tvSerie)
+
+     
+
+// expected output: "foo"
+/* var object1 = {"name":"Mireille", "productionYear":"1999", "castMembers":"plop"}; 
+
+
+console.log(object1.name); */
+
+
+/* var object2 = {a: a, b: b, c: c};
+console.log(object2.b); */
+
+
+
+
+
+
+
+
+
+
+/* function askTvSerie(name,year,members) {
     console.log(name,year,members);
 }
 
-askTvSerie(name,year,members);
+askTvSerie(name,year,members); */
 
 
 //extra oefeningen
